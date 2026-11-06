@@ -1,0 +1,15 @@
+# Data files (DR24 TCE catalog, light curves, splits)
+data/
+*.csv
+*.fits
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
