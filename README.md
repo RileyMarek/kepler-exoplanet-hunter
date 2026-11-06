@@ -7,13 +7,15 @@
 ### Quick Launch
 
 <p align="center">
-  <a href="https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb" target="_blank" rel="noopener noreferrer">
-    <img src="assets/launch-colab.svg" alt="Launch in Google Colab" width="320" height="54" />
+  <a href="https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb">
+    <img src="assets/launch-colab.svg" alt="Launch in Google Colab" width="315" height="52" />
   </a>
+  <br/>
+  <sub><em>(Tip: <b>Ctrl + Click</b> or <b>Middle-Click</b> to launch in a new tab)</em></sub>
 </p>
 
-> **Direct Colab Link (New Tab):**  
-> <a href="https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb" target="_blank" rel="noopener noreferrer">https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb</a>
+> **Direct Colab Link:**  
+> `https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb`
 
 > **GitHub Repository:**  
 > `https://github.com/RileyMarek/kepler-exoplanet-hunter`
