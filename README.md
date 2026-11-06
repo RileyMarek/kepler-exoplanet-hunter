@@ -6,13 +6,14 @@
 
 ### Quick Launch
 
-<p align="center">
-  <a href="https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb" target="_blank">
-    <img src="https://img.shields.io/badge/LAUNCH_IN_GOOGLE_COLAB-238636?style=for-the-badge&logo=googlecolab&logoColor=white" height="52" alt="Launch in Google Colab" />
-  </a>
-</p>
+<div align="center">
+
+[![Launch in Google Colab](assets/launch-colab.svg)](https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb)
+
+</div>
 
 > **Direct Colab Link:**  
+> [Launch in Google Colab](https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb)  
 > `https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb`
 
 > **GitHub Repository:**  
@@ -63,6 +64,8 @@ The **Launch in Google Colab** button dynamically clones the **latest commit on 
 
 ```text
 kepler-exoplanet-hunter/
+├── assets/
+│   └── launch-colab.svg                            # Custom solid-green Colab launch button
 ├── .gitignore                                      # Ignores data artifacts (*.csv, data/) & checkpoints
 ├── README.md                                       # Workflow guide, quick launch & responsibilities
 └── Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb  # Primary collaborative Colab notebook

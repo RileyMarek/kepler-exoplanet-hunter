@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="54" viewBox="0 0 310 54" fill="none">
+  <rect width="310" height="54" rx="10" fill="#238636"/>
+  <!-- Google Colab Infinity / Loops Logo in White -->
+  <g transform="translate(18, 13)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.07 14.05C11.66 16.48 7.74 16.48 5.33 14.05C2.92 11.62 2.92 7.68 5.33 5.25C7.74 2.82 11.66 2.82 14.07 5.25C15.02 6.2 15.63 7.42 15.89 8.7C15.22 8.71 14.57 8.93 14.02 9.35C13.2 8.35 12.02 7.7 10.7 7.7C8.49 7.7 6.7 9.5 6.7 11.72C6.7 13.94 8.49 15.74 10.7 15.74C12.01 15.74 13.18 15.1 14.01 14.12C14.03 14.1 14.05 14.07 14.07 14.05ZM18.93 14.05C21.34 16.48 25.26 16.48 27.67 14.05C30.08 11.62 30.08 7.68 27.67 5.25C25.26 2.82 21.34 2.82 18.93 5.25C17.98 6.2 17.37 7.42 17.11 8.7C17.78 8.71 18.43 8.93 18.98 9.35C19.8 8.35 20.98 7.7 22.3 7.7C24.51 7.7 26.3 9.5 26.3 11.72C26.3 13.94 24.51 15.74 22.3 15.74C20.99 15.74 19.82 15.1 18.99 14.12C18.97 14.1 18.95 14.07 18.93 14.05Z" fill="#FFFFFF"/>
+    <circle cx="16.5" cy="14" r="3.2" fill="#FFFFFF"/>
+  </g>
+  <!-- Button Text -->
+  <text x="65" y="33" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">LAUNCH IN GOOGLE COLAB</text>
+</svg>
