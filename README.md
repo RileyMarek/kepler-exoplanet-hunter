@@ -6,9 +6,11 @@
 
 ### Quick Launch
 
-<a href="https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" height="38"/>
-</a>
+<p align="center">
+  <a href="https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb" target="_blank">
+    <img src="https://img.shields.io/badge/LAUNCH_IN_GOOGLE_COLAB-238636?style=for-the-badge&logo=googlecolab&logoColor=white" height="52" alt="Launch in Google Colab" />
+  </a>
+</p>
 
 > **Direct Colab Link:**  
 > `https://colab.research.google.com/github/RileyMarek/kepler-exoplanet-hunter/blob/main/Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb`
@@ -20,50 +22,40 @@
 
 ## Team Workflow & Google Colab Sync Guide
 
-This repository is synced directly with Google Colab so the whole team (Jackson, Taylor, Riley) can work without local environment headaches.
+This repository is synced directly with Google Colab so the whole team (Riley, Jackson, Taylor) can run, edit, and sync without local setup friction.
 
-### How It Works Under the Hood
-The "Open In Colab" link dynamically pulls the **latest commit on the `main` branch** of this GitHub repository every time it is opened. You will always be working with the most recent version of the notebook.
+### How It Works
+The **Launch in Google Colab** button dynamically clones the **latest commit on the `main` branch** of this GitHub repository every time it is opened. You will always be working with the most recent version of the notebook.
 
-### Step-by-Step Team Editing Workflow
+### In-Browser Development Workflow
 
 ```
-1. Click "Open In Colab"  ──>  2. Write / Test Code in Browser  ──>  3. File > "Save a copy in GitHub"
+1. Click Launch Button  ──>  2. Run & Edit Assigned Section  ──>  3. File > "Save a copy in GitHub"
 ```
 
-1. **Launch the Notebook:**
-   - Click the **Open In Colab** badge above or use the direct link.
-   - Colab will clone the live `main` branch into a fresh, GPU/TPU-capable cloud instance.
-
-2. **Run & Edit Your Section:**
-   - Run **Section 0** to install domain libraries (`lightkurve`, `astropy`) and mount our shared Google Drive folder (`/content/drive/MyDrive/KTDG_Kepler_Project/data/`).
-   - Locate your designated section badge (`[CHUNK 1 - JACKSON]`, `[CHUNK 2 - TAYLOR]`, or `[CHUNK 3 - RILEY]`) and write your code.
-
-3. **Sync Changes Back to GitHub (Crucial Step):**
-   - Once your section runs cleanly, save your work directly back to GitHub from Colab:
-     1. Click **File** in the top navigation bar.
-     2. Select **Save a copy in GitHub...**
-     3. Select Repository: `RileyMarek/kepler-exoplanet-hunter`
-     4. Select Branch: `main`
-     5. File path: `Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb`
-     6. Enter a clear commit message (e.g., `feat: implement DR24 data cleaning and grouped split` or `feat: add lightkurve phase-folding and visualization 1`).
-     7. Click **OK**.
-   - Your updates are immediately committed to GitHub, and the next person who clicks the "Open in Colab" badge gets your updated code automatically.
-
-4. **Team Collaboration Etiquette:**
-   - Before starting a coding session, refresh the GitHub page or click the Colab link fresh to make sure you have the newest commit from your teammates.
-   - If two people need to work at the exact same time, communicate which cells you are touching, or save with distinct commit notes to avoid overwriting each other's outputs.
+1. **Launch:** Click the green **Launch in Google Colab** button above.
+2. **Setup:** Run **Section 0** to mount the shared Google Drive (`DATA_DIR`) and import dependencies.
+3. **Edit Your Section:** Work within your designated section (`Section 1`, `Section 2`, or `Section 3`).
+4. **Save Back to GitHub:**
+   - Go to **File** $\to$ **Save a copy in GitHub...**
+   - Select Repository: `RileyMarek/kepler-exoplanet-hunter`
+   - Select Branch: `main`
+   - File Path: `Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb`
+   - Enter a descriptive commit message (e.g., `feat: implement DR24 data cleaning and grouped split`).
+   - Click **OK**.
+5. **Collaborator Access:** All team members added as repository collaborators can commit directly back to `main` from their browser.
 
 ---
 
-## Midpoint Division of Responsibilities
+## Midpoint Responsibilities
 
-| Team Member | Midpoint Role | Deliverables |
+| Section | Main Contributor | Deliverables |
 | :--- | :--- | :--- |
-| **Jackson Lusk** | **Chunk 1:** Data Ingestion & Cleaning *(Target: Saturday AM)* | Filter unvetted `UNK` rows; map `PC` $\to 1$, `AFP`/`NTP` $\to 0$; isolate 12 physical features; median imputation; 70/15/15 split grouped strictly by `kepid` with 0% leakage assertion; export `train.csv`, `val.csv`, `test.csv` to Drive; plot class imbalance. |
-| **Taylor Tran** | **Chunk 2:** Light Curves & Physics Baseline *(Target: Sat–Sun)* | Query MAST with `lightkurve`; remove cosmic-ray outliers; detrend stellar variability; phase-fold light curves; **Visualization 1** (U-shape Candidate vs. V-shape Eclipsing Binary); build & score deterministic Physics Baseline. |
-| **Riley Marek** | **Chunk 3:** EDA & Classical ML *(Target: Sat–Sun)* | **Visualization 2** (SNR, depth, duration distributions by class); train class-weighted Logistic Regression; train class-weighted Random Forest; Gini feature importances plot; validation scoring & error analysis. |
-| **All Members** | **Midpoint Synthesis** | Unified 3-model benchmark table on `val.csv`; false-alarm / missed-planet failure analysis; submit group discussion post. |
+| **Section 1: Data Cleaning & Preprocessing** | **Jackson Lusk** *(Target: Saturday AM)* | Ingest DR24 TCE catalog; drop unvetted `UNK` rows; map targets (`PC` $\to 1$, `AFP`/`NTP` $\to 0$); select 10–12 physical features; median imputation; 70/15/15 split grouped strictly by `kepid` with 0% leakage assertion; export `train.csv`, `val.csv`, `test.csv`; plot class distribution. |
+| **Section 2: Light Curves & Baseline** | **Taylor Tran** *(Target: Sat–Sun)* | Query MAST with `lightkurve`; outlier masking; stellar detrending; phase-folding; **Visualization 1** (U-shape Candidate vs. V-shape Eclipsing Binary); build & score deterministic Physics Baseline on `val.csv`. |
+| **Section 3: EDA & Classical ML** | **Riley Marek** *(Target: Sat–Sun)* | **Visualization 2** (SNR, depth, duration distributions by class); train class-weighted Logistic Regression; train class-weighted Random Forest; Gini feature importances; score models on `val.csv`. |
+| **Section 4: Midpoint Synthesis** | **All Contributors** | Unified 3-model benchmark table on `val.csv`; false-alarm & missed-planet error analysis. |
+| **Section 5: Check-In Submission** | **All Contributors** | Formatted discussion post addressing all project check-in rubric criteria. |
 
 ---
 
@@ -71,7 +63,7 @@ The "Open In Colab" link dynamically pulls the **latest commit on the `main` bra
 
 ```text
 kepler-exoplanet-hunter/
-├── .gitignore                                      # Ignores large datasets (*.csv, data/) & caches
-├── README.md                                       # Workflow guide, quick launch & roles
+├── .gitignore                                      # Ignores data artifacts (*.csv, data/) & checkpoints
+├── README.md                                       # Workflow guide, quick launch & responsibilities
 └── Main_Workspace_Vetting_Kepler_Transit_Signals.ipynb  # Primary collaborative Colab notebook
 ```
