@@ -1,7 +1,11 @@
 # Data files (DR24 TCE catalog, light curves, splits)
+# Data files (DR24 TCE catalog, light curves)
 data/
 *.csv
 *.fits
+
+# except the frozen splits, everyone trains on these
+!out/*.csv
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
